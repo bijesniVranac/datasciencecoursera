@@ -17,7 +17,7 @@ complete <- function(directory, id = 1:332) {
     temp <- read.csv(file_list[i], header = TRUE)
     good <- complete.cases(temp)
     temp <- temp[good,]
-    nobs<- nrow(temp)
+    nobs <- nrow(temp)
     dat <- rbind(dat, data.frame(i, nobs))
   }
   return (dat)
@@ -37,3 +37,4 @@ corr <- function(directory, treshold = 0) {
   }
   return(a)
 }
+

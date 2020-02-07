@@ -45,3 +45,12 @@ f <- function(x) {
   z <- 4
   x + g(x)
 }
+
+printmessage <-  function(x) {
+  if (x>0) {
+    print("x is greater")
+  }
+  else 
+    print("it is lower")
+  invisible(x)
+}
